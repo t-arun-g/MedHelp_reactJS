@@ -153,6 +153,7 @@ class App extends Component {
           </div>
         </div>
         <div style="text-align:center; position:relative; top: -50px">
+          <br/>
           <span class="dot"></span> 
           <span class="dot"></span> 
           <span class="dot"></span> 
