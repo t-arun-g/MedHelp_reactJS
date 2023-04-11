@@ -1,9 +1,18 @@
 import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Emblem from "./assets/images/Emblem_of_India.svg";
+import Line1 from "./assets/images/Line 1.png";
+import eyelash from "./assets/images/eyelash.png";
+import im1 from "./assets/images/im1.jpg";
+import im23 from "./assets/images/im23.jpg";
+import im33 from "./assets/images/im33.jpg";
+import google from "./assets/images/google.svg";
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <nav
           className="navbar navbar-expand-md"
           style={{backgroundColor: "#F2F6FF"}}
@@ -14,12 +23,12 @@ class App extends Component {
               style={{fontSize: "2.75rem",fontFamily:"Inter"}}
             >
               <img alt='#'
-                src="/images/Emblem_of_India.svg"
+                src={Emblem}
                 className="mt-2 ms-4 me-1"
                 style={{width:"2rem" ,height:"3.245625 rem",float: "left"}}
               />
               <img alt='#'
-                src="/images/Line 1.png"
+                src={Line1}
                 className="mt-2 ms-1 me-1"
                 style={{width:"0.02rem" ,height:"3.0625rem",float: "left"}}
               />
@@ -161,7 +170,7 @@ class App extends Component {
                 />
 
                 <img alt='#'
-                  src="/images/eyelash.png"
+                  src={eyelash}
                   style={{top: "-2rem",width:"5%",position: "relative",left:"18rem",cursor: "pointer"}}
                   id="toggler"
                 />
@@ -188,7 +197,7 @@ class App extends Component {
                   id="id_password2"
                 />
                 <img alt='#'
-                  src="/images/eyelash.png"
+                  src={eyelash}
                   style={{top: "-2rem",width:"5%",position: "relative",left: "18rem",cursor:"pointer"}}
                   id="togglers"
                 />
@@ -241,8 +250,8 @@ class App extends Component {
                   style={{borderColor: "rgb(122, 120, 120)"}}
                 />
                 <div
-                  className="col-md-6 lead"
-                  style={{fontSize: "12px",textAlign: "center",opacity: "80%"}}
+                  className="col-md-5 lead"
+                  style={{fontSize: "12px",opacity: "80%"}}
                 >
                   Or, log in with your email
                 </div>
@@ -257,7 +266,7 @@ class App extends Component {
                 style={{marginLeft:"0.625rem",width:"95%"}}
               >
                 <img alt='#'
-                  src="/images/google.svg"
+                  src={google}
                   style={{ marginRight: "0.2rem",height:"1.875rem"}}
                 ></img>
                 Sign in with Google
@@ -276,7 +285,7 @@ class App extends Component {
               <div className="carousel-okay carousel-inner">
                 <div className="carousel-okay carousel-item active">
                   <img
-                    src="/images/im1.jpg"
+                    src={im1}
                     className="w-100 "
                     style={{height: "100%",maxWidth: "100%"}}
                     alt=""
@@ -284,7 +293,7 @@ class App extends Component {
                 </div>
                 <div className="carousel-okay carousel-item">
                   <img
-                    src="/images/im23.jpg"
+                    src={im23}
                     className="w-100 "
                     style={{height: "100%",maxWidth: "100%"}}
                     alt=""
@@ -292,7 +301,7 @@ class App extends Component {
                 </div>
                 <div className="carousel-okay carousel-item">
                   <img
-                    src="/images/im33.jpg"
+                    src={im33}
                     className="w-100 "
                     style={{height: "100%",maxWidth: "100%"}}
                     alt=""
@@ -308,7 +317,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </>
     )
   }
 }
