@@ -9,16 +9,16 @@ class App extends Component {
           style={{backgroundColor: "#F2F6FF"}}
         >
           <div className="container-fluid">
-            <a
+            <a href='hello'
               className="navbar-brand "
               style={{fontSize: "2.75rem",fontFamily:"Inter"}}
             >
-              <img
+              <img alt='#'
                 src="/images/Emblem_of_India.svg"
                 className="mt-2 ms-4 me-1"
                 style={{width:"2rem" ,height:"3.245625 rem",float: "left"}}
               />
-              <img
+              <img alt='#'
                 src="/images/Line 1.png"
                 className="mt-2 ms-1 me-1"
                 style={{width:"0.02rem" ,height:"3.0625rem",float: "left"}}
@@ -160,7 +160,7 @@ class App extends Component {
                   id="id_password"
                 />
 
-                <img
+                <img alt='#'
                   src="/images/eyelash.png"
                   style={{top: "-2rem",width:"5%",position: "relative",left:"18rem",cursor: "pointer"}}
                   id="toggler"
@@ -187,9 +187,9 @@ class App extends Component {
                   className="form-control"
                   id="id_password2"
                 />
-                <img
+                <img alt='#'
                   src="/images/eyelash.png"
-                  style="top: -2rem;width:5%;position: relative;left: 18rem; cursor:pointer;"
+                  style={{top: "-2rem",width:"5%",position: "relative",left: "18rem",cursor:"pointer"}}
                   id="togglers"
                 />
                 <div
@@ -256,7 +256,7 @@ class App extends Component {
                 className="btn btn-outline-secondary container-fluid"
                 style={{marginLeft:"0.625rem",width:"95%"}}
               >
-                <img
+                <img alt='#'
                   src="/images/google.svg"
                   style={{ marginRight: "0.2rem",height:"1.875rem"}}
                 ></img>
