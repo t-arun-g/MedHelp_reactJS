@@ -7,9 +7,15 @@ import eyelash from "../assets/images/eyelash.png";
 
 function Signup() {
     const [pass,valid_pass]=useState({password:"",confirm:"",Match:""});
+    const [cred_pass,valid_cred_pass]=useState(true);
     useEffect(()=>{
+        const regex=new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+        if(!regex.test(pass.password)){
+                valid_cred_pass(false);
+                console.log(cred_pass)
+                }
         
-    },[pass])
+},[pass,cred_pass])
 
 
     return (<>
@@ -99,7 +105,7 @@ function Signup() {
                 />
 
                 <div
-                  style={{color:"red",fontSize:"12px",display: "none",position: "relative",top:"-1rem"}}
+                  style={{color:"red",fontSize:"12px",display: 'none',position: "relative",top:"-1rem"}}
                   id="pass_creds"
                 >
                   8-12 letters & at least one special,number,capital and
