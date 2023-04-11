@@ -1,105 +1,14 @@
 import React, { Component } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Emblem from "./assets/images/Emblem_of_India.svg";
-import Line1 from "./assets/images/Line 1.png";
-import eyelash from "./assets/images/eyelash.png";
-import im1 from "./assets/images/im1.jpg";
-import im23 from "./assets/images/im23.jpg";
-import im33 from "./assets/images/im33.jpg";
-import google from "./assets/images/google.svg";
+import google from "../assets/images/google.svg";
+import eyelash from "../assets/images/eyelash.png";
 
-class App extends Component {
+
+
+class Signup extends Component {
   render() {
-    return (
-      <>
-        <nav
-          className="navbar navbar-expand-md"
-          style={{backgroundColor: "#F2F6FF"}}
-        >
-          <div className="container-fluid">
-            <a href='hello'
-              className="navbar-brand "
-              style={{fontSize: "2.75rem",fontFamily:"Inter"}}
-            >
-              <img alt='#'
-                src={Emblem}
-                className="mt-2 ms-4 me-1"
-                style={{width:"2rem" ,height:"3.245625 rem",float: "left"}}
-              />
-              <img alt='#'
-                src={Line1}
-                className="mt-2 ms-1 me-1"
-                style={{width:"0.02rem" ,height:"3.0625rem",float: "left"}}
-              />
-
-              <span
-                className="mt-1 ms-1 me-1"
-                style={{color: "#18CDCA",float: "left",fontWeight: "600"}}
-              >
-                Med
-              </span>
-              <span
-                className="mt-1  "
-                style={{color: "#4F4F4F",float: "left",fontWeight: "600"}}
-              >
-                Repo
-              </span>
-            </a>
-
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#Navbar"
-            >
-              <span className="fa fa-list"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="Navbar">
-              <ul
-                className="navbar-nav ms-auto mb-2 mb-lg-0"
-                style={{fontSize:"larger",fontWeight:"400",fontFamily: "Inter",lineHeight: "1.895625 rem"}}
-              >
-                <li className="nav-item">
-                  <a className="p-3 nav-link" href="/" style={{color:"#0B5B5A"}}>
-                    About
-                  </a>
-                </li>
-
-                <li className="nav-item">
-                  <a className="p-3 nav-link" href="/" style={{color:"#0B5B5A"}}>
-                    Help
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="p-3 nav-link" href="/" style={{color:"#0B5B5A"}}>
-                    Know More
-                  </a>
-                </li>
-                <li class="nav-item">
-                <a className="p-3 nav-link" href="/" style={{color:"#0B5B5A"}}>
-                    Login
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-        <div className="row container-fluid">
-          <div
-            className="col-md-3 col-sm-7 mt-1"
-            style = {{position: "relative", marginLeft: "5rem"}}
-          >
-            <div
-              className="mt-2"
-              style={{fontSize: "xx-large",color: "rgb(13, 13, 109)",fontFamily:"Droid Sans",fontWeight: "900",textShadow: "0.0625rem 0 #000000"}}
-            >
-              Hi, Welcome!
-            </div>
-            <br />
-
-            <form action="/add_profile" method="post">
+    return (<>
+     <form action="/add_profile" method="post">
               <div
                 className="mb-3"
                 style={{fontFamily: "Droid Sans",color: "rgb(13, 13, 109)",fontWeight:"600"}}
@@ -273,53 +182,10 @@ class App extends Component {
               </button>
               <br />
             </form>
-          </div>
-
-          <div class="carousel-okay col-6 container-fluid mt-5">
-            <div
-              id="myslideshow"
-              className="carousel-okay  carousel slide "
-              data-ride="carousel"
-              data-interval="100"
-            >
-              <div className="carousel-okay carousel-inner">
-                <div className="carousel-okay carousel-item active">
-                  <img
-                    src={im1}
-                    className="w-100 "
-                    style={{height: "100%",maxWidth: "100%"}}
-                    alt=""
-                  />
-                </div>
-                <div className="carousel-okay carousel-item">
-                  <img
-                    src={im23}
-                    className="w-100 "
-                    style={{height: "100%",maxWidth: "100%"}}
-                    alt=""
-                  />
-                </div>
-                <div className="carousel-okay carousel-item">
-                  <img
-                    src={im33}
-                    className="w-100 "
-                    style={{height: "100%",maxWidth: "100%"}}
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div style={{textAlign:"center", position:"relative", top: "-50px"}}>
-                <br />
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
+    
+    </>
     )
   }
 }
 
-export default App
+export default Signup
