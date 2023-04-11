@@ -1,12 +1,17 @@
-import React, { Component } from 'react'
+import React, {useEffect, useState} from 'react'
 
 import google from "../assets/images/google.svg";
 import eyelash from "../assets/images/eyelash.png";
 
 
 
-class Signup extends Component {
-  render() {
+function Signup() {
+    const [pass,valid_pass]=useState({password:"",confirm:"",Match:""});
+    useEffect(()=>{
+        
+    },[pass])
+
+
     return (<>
      <form action="/add_profile" method="post">
               <div
@@ -76,6 +81,15 @@ class Signup extends Component {
                   name="password"
                   className="form-control"
                   id="id_password"
+                    onChange={(e)=>{
+                        let password=e.target.value;
+                        console.log(password);
+                        valid_pass((pass)=>{
+                            let Match="";
+                        if(password!==pass.confirm){Match="The passwords dont match";}
+                        else Match=""
+                    return {...pass,password:password,Match:Match}})
+                        }}
                 />
 
                 <img alt='#'
@@ -104,18 +118,31 @@ class Signup extends Component {
                   type="password"
                   className="form-control"
                   id="id_password2"
+                  onChange={(e)=>{
+                    let confirm_password=e.target.value;
+                    console.log(confirm_password);
+                    valid_pass((pass)=>{
+                        let Match="";
+                        if(pass.password!==confirm_password){Match="The passwords dont match";}
+                        else Match=""
+                    return {...pass,confirm:confirm_password,Match:Match}})
+                    }}
+
                 />
                 <img alt='#'
                   src={eyelash}
                   style={{top: "-2rem",width:"5%",position: "relative",left: "18rem",cursor:"pointer"}}
                   id="togglers"
                 />
-                <div
-                  style={{color:"red",display: "none",fontSize: "12px",position: "relative",top: "-1rem"}}
-                  id="notmatch"
-                >
-                  The passwords do not match
-                </div>
+                
+                    <div
+                    style={{color:"red",fontSize: "12px",position: "relative",top: "-1rem"}}>
+                    {pass.Match}
+                  </div>
+
+
+                
+                
                   
               </div>
 
@@ -186,6 +213,5 @@ class Signup extends Component {
     </>
     )
   }
-}
 
 export default Signup

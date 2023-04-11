@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+import React, {} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Emblem from "../assets/images/Emblem_of_India.svg";
 import Line1 from "../assets/images/Line 1.png";
 
-class Index_navbar extends Component {
-  render() {
+
+function Index_navbar() {
+      
+
+
     return (
         <>
         <nav
@@ -85,6 +88,6 @@ class Index_navbar extends Component {
         </>
     )
   }
-}
+
 
 export default Index_navbar
