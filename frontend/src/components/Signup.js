@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react'
 import google from "../assets/images/google.svg";
 import eyelash from "../assets/images/eyelash.png";
 
+//components
 
 
 function Signup() {
@@ -14,6 +15,7 @@ function Signup() {
                 valid_cred_pass(false);
                 console.log(cred_pass)
                 }
+                else valid_cred_pass(()=>true)
         
 },[pass,cred_pass])
 
@@ -104,13 +106,12 @@ function Signup() {
                   id="toggler"
                 />
 
-                <div
-                  style={{color:"red",fontSize:"12px",display: 'none',position: "relative",top:"-1rem"}}
-                  id="pass_creds"
-                >
-                  8-12 letters & at least one special,number,capital and
-                  lowercase alphabet
-                </div>
+                  {cred_pass ? (null
+        ) : (<div style={{color:"red",fontSize:"12px",position: "relative",top:"-1rem"}}>
+        8-12 letters & at least one special,number,capital and
+            lowercase alphabet
+        </div>
+        )}
               </div>
 
               <div
