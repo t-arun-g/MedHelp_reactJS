@@ -77,7 +77,7 @@ function Signup() {
               </div>
 
               <div
-                className="mb-3"
+                className=""
                 style={{fontFamily: 'Droid Sans', color: "rgb(13, 13, 109)",fontWeight:"600"}}
               >
                 <label for="password" className="form-label">
@@ -107,7 +107,7 @@ function Signup() {
                 />
 
                   {cred_pass ? (null
-        ) : (<div style={{color:"red",fontSize:"12px",position: "relative",top:"-1rem"}}>
+        ) : (<div  style={{color:"red",fontSize:"12px",position: "relative",top:"-1rem"}}>
         8-12 letters & at least one special,number,capital and
             lowercase alphabet
         </div>

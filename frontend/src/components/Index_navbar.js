@@ -1,6 +1,6 @@
 import React, {} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { BrowserRouter as Route,Link } from 'react-router-dom';
 import Emblem from "../assets/images/Emblem_of_India.svg";
 import Line1 from "../assets/images/Line 1.png";
 
@@ -59,15 +59,15 @@ function Index_navbar() {
                 style={{fontSize:"larger",fontWeight:"400",fontFamily: "Inter",lineHeight: "1.895625 rem"}}
               >
                 <li className="nav-item">
-                  <a className="p-3 nav-link" href="/" style={{color:"#0B5B5A"}}>
+                  <Link to="/" className="p-3 nav-link" href="" style={{color:"#0B5B5A"}}>
                     About
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="p-3 nav-link" href="/" style={{color:"#0B5B5A"}}>
+                  <Link to="/help" className="p-3 nav-link" href="" style={{color:"#0B5B5A"}}>
                     Help
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="p-3 nav-link" href="/" style={{color:"#0B5B5A"}}>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import im1 from "./assets/images/im1.jpg";
@@ -11,6 +11,12 @@ import Signup from './components/Signup';
 
 
 class App extends Component {
+  // constructor{
+    
+  // }
+
+
+
   render() {
     return (
     
