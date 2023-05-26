@@ -11,10 +11,11 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "proxy": "http://localhost:4000/",
+  "proxy": "https://avikalpg-psychic-fiesta-p5qg7wr4w4hrq6-4000.preview.app.github.dev/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
